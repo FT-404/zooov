@@ -5,6 +5,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 .page {
     display: block;
@@ -17,6 +18,49 @@
 .greeting {
     background-image: url("../img/greeting-bg.jpg");
     height: 800px;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        .text {
+            font-family: 'Montserrat', sans-serif;
+            margin-left: 140/1440*100%;
+            width: 490px;
+            margin-top: 130-64px;
+            .heading {
+                text-align: left;
+                font-family: 'Oswald', sans-serif;
+                color: white;
+                font-size: 54px;
+                font-weight: 700;
+                line-height: 70.2px;
+            }
+
+            .disc {
+                width: 368/490*100%;
+                color: white;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+                margin-top: 10px;
+            }
+            button {
+                margin-top: 25px;
+                font-family: inherit;
+                width: 227px;
+                height: 48px;
+                background-color: #8B1A12;
+                color: white;
+                text-align: center;
+                outline: none;
+                border: 0 solid;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1440px) {

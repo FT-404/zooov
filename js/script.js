@@ -1,9 +1,8 @@
 addEventListener('scroll', ()=> {
-    console.log(document.scrollingElement.scrollTop)
-    if (document.scrollingElement.scrollTop >= 800) {
-        document.querySelector('header').classList.add('scroll');
-        console.log('gg')
+    if (document.scrollingElement.scrollTop >= 1) {
+        document.querySelectorAll('header')[1].style.display = 'flex';
+        document.querySelectorAll('header')[1].style.animationName = 'anim-header';
     } else {
-        document.querySelector('header').classList.remove('scroll');
+        document.querySelectorAll('header')[1].style.animationName = 'anim-header-reverse';
     }
 })

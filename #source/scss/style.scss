@@ -10,21 +10,25 @@
 .page {
     display: block;
     margin: auto;
-    width: 1440px;
     height: 300vh;
     background-color: #fff;
 }
 
 .greeting {
     background-image: url("../img/greeting-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 800px;
     .wrapper {
+        width: 1440px;
+        margin: auto;
         display: flex;
         justify-content: space-between;
         margin-top: 64px;
         .text {
             font-family: 'Montserrat', sans-serif;
-            margin-left: 140/1440*100%;
+            margin-left: 120/1440*100%;
             width: 490px;
             margin-top: 130-64px;
             .heading {
@@ -34,6 +38,9 @@
                 font-size: 54px;
                 font-weight: 700;
                 line-height: 70.2px;
+                background-image: url("../img/bg-line.svg");
+                background-repeat: no-repeat;
+                background-position: 75% 55%;
             }
 
             .disc {
@@ -66,5 +73,10 @@
 @media screen and (max-width: 1440px) {
     .page {
         width: 100%;
+    }
+    .greeting {
+        .wrapper {
+            width: 100%;
+        }
     }
 }

@@ -70,6 +70,78 @@
     }
 }
 
+.intro {
+    width: 1440px;
+    font-family: "Montserrat", sans-serif;
+    padding: 180px 120px 0 120px;
+    margin: auto;
+    .info {
+        display: flex;
+        h2 {
+            font-family: "Oswald", sans-serif;
+            font-size: 46px;
+            font-weight: 700;
+            margin-top: 55px;
+        }
+        .text-p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            margin-top: 32px;
+        }
+        .li-header {
+            margin-top: 24px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        ul {
+            li {
+                font-weight: 400;
+                font-size: 16px;
+                list-style-position: inside;
+                padding-top: 16px;
+                color: #961914;
+                &::marker {
+                    font-size: 18px;
+                }
+                span {
+                    color: #434242;
+                    margin-left: -10px;
+                }
+            }
+        }
+    }
+    .structure {
+        height: 288px;
+        display: flex;
+        padding: 32px 80px;
+        justify-content: space-between;
+        margin-top: 80px;
+        background-color: #EAD1D0;
+        background-image: url("../img/structure-bg.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        h3 {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 28px;
+        }
+        ul {
+            column-count: 2;
+            margin-top: 5px;
+        }
+        li {
+            padding-top: 23px;
+            padding-left: 37px;
+            font-size: 18px;
+            font-weight: 500;
+            list-style: none;
+        }
+    }
+}
+
+
+
 @media screen and (max-width: 1440px) {
     .page {
         width: 100%;
@@ -77,6 +149,16 @@
     .greeting {
         .wrapper {
             width: 100%;
+        }
+    }
+    .intro {
+        padding: 180px 120/1440*100% 0 120/1440*100% ;
+        width: 100%;
+        .info {
+            flex-direction: column;
+            img {
+                margin-top: 35px;
+            }
         }
     }
 }

@@ -91,11 +91,21 @@ header:nth-child(2) {
         margin-left: 5%;
       }
       img {
-        margin-left: 121/1440*100%;
+        margin-left: 120/1440*100%;
       }
     }
   }
 
+}
+
+@media screen and (max-width: 1170px) {
+  header {
+    .wrapper-header {
+      img {
+        margin-left: 120/1440*75%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -108,5 +118,15 @@ header:nth-child(2) {
 
     }
 
+  }
+}
+
+@media screen  and (max-width: 955px){
+  header {
+    .wrapper-header {
+      img {
+        margin-left: 120/1440*125%;
+      }
+    }
   }
 }

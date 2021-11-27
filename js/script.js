@@ -6,3 +6,6 @@ addEventListener('scroll', ()=> {
         document.querySelectorAll('header')[1].style.animationName = 'anim-header-reverse';
     }
 })
+
+let listDogs = document.querySelectorAll('.structure .wrapper div');
+listDogs[0].style.display = "none";

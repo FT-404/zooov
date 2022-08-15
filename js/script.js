@@ -8,4 +8,4 @@ addEventListener('scroll', ()=> {
 })
 
 let listDogs = document.querySelectorAll('.structure .wrapper div');
-listDogs[0].style.display = "none";
+
